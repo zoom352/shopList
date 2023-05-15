@@ -1,0 +1,21 @@
+.notification-icon {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 20px;
+    .notification-dot {
+        position: absolute;
+        top: 0;
+        right: 0;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background-color: red;
+        visibility: hidden;
+        transition: visibility 0.3s ease-in-out;
+    }
+
+    .notification-dot.active {
+        visibility: visible;
+    }
+}
